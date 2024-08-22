@@ -1,0 +1,48 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 5 | Scripts: 1 | Modules: 0
+local G2L = {};
+
+-- StarterGui.menumenu
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[menumenu]];
+
+-- StarterGui.menumenu.logo\
+G2L["2"] = Instance.new("ImageButton", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=647648498]];
+G2L["2"]["Size"] = UDim2.new(0.08008, 0, 0.14152, 0);
+G2L["2"]["Name"] = [[logo\]];
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.01652, 0, 0.02406, 0);
+
+-- StarterGui.menumenu.logo\.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 90);
+
+-- StarterGui.menumenu.logo\.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Thickness"] = 2.6;
+
+-- StarterGui.menumenu.logo\.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.menumenu.logo\.LocalScript
+local function C_5()
+local script = G2L["5"];
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	
+end;
+task.spawn(C_5);
+
+return G2L["1"], require;
