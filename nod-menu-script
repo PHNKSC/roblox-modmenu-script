@@ -19,7 +19,7 @@ G2L["2"] = Instance.new("ImageButton", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=647648498]];
-G2L["2"]["Size"] = UDim2.new(0.06664, 0, 0.14152, 0);
+G2L["2"]["Size"] = UDim2.new(0.06664, 0, 0.21266, 0);
 G2L["2"]["Name"] = [[logo\]];
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Position"] = UDim2.new(0.01652, 0, 0.02406, 0);
